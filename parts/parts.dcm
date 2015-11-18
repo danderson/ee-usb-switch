@@ -1,8 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP +12V
-D +12V
-$ENDCMP
 $CMP +3.3V
 D +3.3V
 $ENDCMP
@@ -26,6 +23,9 @@ D GND
 $ENDCMP
 $CMP LED
 D LED
+$ENDCMP
+$CMP Line
+D Line
 $ENDCMP
 $CMP PWR_FLAG
 D PWR_FLAG
