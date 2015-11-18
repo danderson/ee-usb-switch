@@ -1,20 +1,28 @@
 #!/usr/bin/env python
 
 import kidraw
+from kidraw import footprints as fp
 from kidraw import stdlib as std
 from kidraw.icbuilder import ICBuilder
 
 l = kidraw.Library()
 
-std.resistor(l)
-std.capacitor(l)
-std.led(l)
 std.vcc(l, '+3.3V')
 std.vcc(l, '+5V')
 std.vcc(l, 'Line')
 std.gnd(l)
 std.power_flag(l)
 std.test_point(l)
+
+d = std.resistor(l)
+fp.smd0805(d)
+
+d = std.capacitor(l)
+fp.smd0805(d)
+
+d = std.led(l)
+fp.smd0805(d)
+
 
 d = l.device('FSM4JSMA').refdes('S').description('Switch SPST SMD').hide_name().hide_pin_text()
 d.pin(1).passive()
