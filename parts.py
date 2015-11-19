@@ -21,17 +21,25 @@ d = std.capacitor(l)
 fp.smd0805(d)
 
 d = std.led(l)
-fp.smd0805(d)
+fp.smd0805(d, polarized=True)
 
-
+# http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2-1437565-7&DocType=Customer+Drawing&DocLang=English
 d = l.device('FSM4JSMA').refdes('S').description('Switch SPST SMD').hide_name().hide_pin_text()
-d.pin(1).passive()
-d.pin(2).passive()
+d.pin(1, 2).passive()
+d.pin(3, 4).passive()
 s = d.schematic()
 s.line((-50, 0), (50, 50))
-s.pin(1).pos(-100, 0).len(50).dir(kidraw.RIGHT)
-s.pin(2).pos(100, 0).len(50).dir(kidraw.LEFT)
+s.pin(1, 2).pos(-100, 0).len(50).dir(kidraw.RIGHT)
+s.pin(3, 4).pos(100, 0).len(50).dir(kidraw.LEFT)
+f = d.footprint('SMD')
+f.pad(1).smd().rect(1.4, 2.1).pos(2.25, 4.55)
+f.pad(2).smd().rect(1.4, 2.1).pos(2.25, -4.55)
+f.pad(3).smd().rect(1.4, 2.1).pos(-2.25, 4.55)
+f.pad(4).smd().rect(1.4, 2.1).pos(-2.25, -4.55)
+f.refdes().pos(0, 10)
+f.value().hidden()
 
+# www.vishay.com/docs/73449/si1869dh.pdf
 d = l.device('Si1869DH').description('Load Switch with Level Shift')
 d.pin(1).name('Slew').passive()
 d.pin(2, 3).name('Vout').power()
@@ -48,6 +56,7 @@ b.pin(1)
 b.dir(kidraw.DOWN)
 b.pin(6)
 b.build(d.schematic())
+
 
 d = l.device('AP2120N').description('3.3V LDO Regulator')
 d.pin(1).name('GND').power()
