@@ -1,1 +1,0 @@
-(module SMD (layer F.Cu) (tedit 0) (pad 1 connect circle (at 0.000000 0.000000) (size 2.000000 2.000000) (layers F.Cu F.Paste F.Mask F.SilkS) ) (fp_text reference "REFDES" (at 0.000000 2.000000) (layer F.SilkS) ) (fp_text value "VALUE" (at 0.000000 0.000000) (layer F.SilkS) hide ) )

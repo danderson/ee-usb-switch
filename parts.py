@@ -1,133 +1,136 @@
 #!/usr/bin/env python
 
 import kidraw
-from kidraw import footprints as fp
-from kidraw import stdlib as std
-from kidraw.icbuilder import ICBuilder
+from kidraw import schematic as sch
+from kidraw import footprint as fp
+from kidraw import ipc
+from kidraw.schematic import library as slib
+from kidraw.footprint import library as flib
 
-l = kidraw.Library()
+l = kidraw.Library('parts')
+l.devices = [
+    kidraw.Device(slib.vcc('+3.3V')),
+    kidraw.Device(slib.vcc('+5V')),
+    kidraw.Device(slib.vcc('Line')),
+    kidraw.Device(slib.gnd()),
+    kidraw.Device(slib.power_flag()),
+    kidraw.Device(slib.resistor(),
+                  [flib.chip(flib.imperial('0805'))]),
+    kidraw.Device(slib.capacitor(),
+                  [flib.chip(flib.imperial('0805'))]),
+    kidraw.Device(slib.led(),
+                  [flib.chip(flib.imperial('0805'), polarized=True)]),
+    kidraw.Device(slib.switch()), # TODO: footprint
+]
 
-std.vcc(l, '+3.3V')
-std.vcc(l, '+5V')
-std.vcc(l, 'Line')
-std.gnd(l)
-std.power_flag(l)
-std.test_point(l)
+s = sch.Schematic('Si1869DH', description='Load Switch with Level Shift')
+with sch.ICBuilder(s, 6) as ic:
+    ic.side(sch.Pin.Left)
+    ic.pin(4, name='Vin', type=sch.Pin.Power)
+    ic.pin(5, name='SW', type=sch.Pin.Input)
+    ic.side(sch.Pin.Right)
+    ic.pin(1, name='Slew', type=sch.Pin.Passive)
+    ic.pin([2, 3], name='Vout', type=sch.Pin.Power)
+    ic.side(sch.Pin.Down)
+    ic.pin(6, name='Bias', type=sch.Pin.Passive)
+l.devices.append(kidraw.Device(s, [flib.SC70(6)]))
 
-d = std.resistor(l)
-fp.smd0805(d)
+s = sch.Schematic('AP2120N', description='3.3V LDO Regulator')
+with sch.ICBuilder(s, 3) as ic:
+    ic.side(sch.Pin.Left)
+    ic.pin(3, name='Vin', type=sch.Pin.Power)
+    ic.side(sch.Pin.Right)
+    ic.pin(2, name='Vout', type=sch.Pin.Power)
+    ic.side(sch.Pin.Down)
+    ic.pin(1, name='GND', type=sch.Pin.Power)
+l.devices.append(kidraw.Device(s, [flib.SOT23(3)]))
 
-d = std.capacitor(l)
-fp.smd0805(d)
+s = sch.Schematic('STM32F042K6T6', description='ARM 32-bit MCU with USB')
+with sch.ICBuilder(s, 32) as ic:
+    ic.side(sch.Pin.Left)
+    ic.pin([1, 5, 17], name='VDD', type=sch.Pin.Power)
+    ic.gap(1)
+    ic.pin(4, name='~RST', type=sch.Pin.Input)
+    ic.pin(31, name='BOOT', type=sch.Pin.Input)
+    ic.gap(1)
+    ic.pin(21, name='USB_D-', type=sch.Pin.Bidirectional)
+    ic.pin(22, name='USB_D+', type=sch.Pin.Bidirectional)
+    ic.gap(1)
+    ic.pin(23, name='SWDIO', type=sch.Pin.Bidirectional)
+    ic.pin(24, name='SWCLK', type=sch.Pin.Bidirectional)
+    ic.gap(1)    
+    ic.pin([16, 32], name='VSS', type=sch.Pin.Power)
 
-d = std.led(l)
-fp.smd0805(d, polarized=True)
+    # PWM channels
+    ic.side(sch.Pin.Right)
+    for pwm, numch, startpin in ((2, 4, 6),
+                                 (14, 1, 10),
+                                 (3, 4, 12),
+                                 (1, 3, 18)):
+        for i in range(numch):
+            ic.pin(startpin+i, name='PWM{0}_{1}'.format(pwm, i+1), type=sch.Pin.Output)
+l.devices.append(kidraw.Device(s, [flib.QFP(
+    ipc.Dimension(6.8, 7.2),
+    ipc.Dimension(8.8, 9.2),
+    ipc.Dimension(0.45, 0.75),
+    ipc.Dimension(0.3, 0.45),
+    pitch=0.8,
+    num_pins=32)
+]))
 
-# http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2-1437565-7&DocType=Customer+Drawing&DocLang=English
-d = l.device('FSM4JSMA').refdes('S').description('Switch SPST SMD').hide_name().hide_pin_text()
-d.pin(1, 2).passive()
-d.pin(3, 4).passive()
-s = d.schematic()
-s.line((-50, 0), (50, 50))
-s.pin(1, 2).pos(-100, 0).len(50).dir(kidraw.RIGHT)
-s.pin(3, 4).pos(100, 0).len(50).dir(kidraw.LEFT)
-f = d.footprint('SMD')
-f.pad(1).smd().rect(1.4, 2.1).pos(2.25, 4.55)
-f.pad(2).smd().rect(1.4, 2.1).pos(2.25, -4.55)
-f.pad(3).smd().rect(1.4, 2.1).pos(-2.25, 4.55)
-f.pad(4).smd().rect(1.4, 2.1).pos(-2.25, -4.55)
-f.refdes().pos(0, 10)
-f.value().hidden()
+s = sch.Schematic('2 Post Terminal', refdes='CON', description='2-post terminal', show_name=False)
+with sch.ICBuilder(s, 2) as ic:
+    ic.side(sch.Pin.Right)
+    ic.pin(1, name='+', type=sch.Pin.Power)
+    ic.pin(2, name='-', type=sch.Pin.Power)
+# http://www.digikey.com/product-detail/en/OSTTE020104/ED2740-ND/2351816
+f = fp.Footprint(name='OSTTE020104', description='Interlockable 3.5mm screw terminals')
+x = 3.5/2
+f.features = [
+    fp.ThroughHolePad(name=1, center=(-x, 0), size=(1.7, 1.7), drill_size=1.2),
+    fp.ThroughHolePad(name=2, center=(x, 0), size=(1.7, 1.7), drill_size=1.2),
+    fp.Line(start=(-3.5, 3.4), end=(-3.5, -3.6)),
+    fp.Line(start=(-3.5, -3.6), end=(3.5, -3.6)),
+    fp.Line(start=(3.5, -3.6), end=(3.5, 3.4)),
+    fp.Line(start=(3.5, 3.4), end=(-3.5, 3.4)),
+    fp.Line(start=(-x, -3), end=(-x, -3.6), line_width=0.1),
+    fp.Line(start=(x, -3), end=(x, -3.6), line_width=0.1),
+]
+l.devices.append(kidraw.Device(s, [f]))
 
-# www.vishay.com/docs/73449/si1869dh.pdf
-d = l.device('Si1869DH').description('Load Switch with Level Shift')
-d.pin(1).name('Slew').passive()
-d.pin(2, 3).name('Vout').power()
-d.pin(4).name('Vin').power()
-d.pin(5).name('SW').input()
-d.pin(6).name('Bias').passive()
-b = ICBuilder()
-b.dir(kidraw.RIGHT)
-b.pin(4)
-b.pin(5)
-b.dir(kidraw.LEFT)
-b.pin(2, 3)
-b.pin(1)
-b.dir(kidraw.DOWN)
-b.pin(6)
-b.build(d.schematic())
+s = sch.Schematic('USB Micro', refdes='CON', description='USB Micro Connector')
+with sch.ICBuilder(s, 5) as ic:
+    ic.side(sch.Pin.Right)
+    ic.pin(1, name='VBus', type=sch.Pin.Power)
+    ic.pin(2, name='D+', type=sch.Pin.Bidirectional)
+    ic.pin(3, name='D-', type=sch.Pin.Bidirectional)
+    ic.pin(5, name='GND', type=sch.Pin.Power)
+# http://www.digikey.com/product-detail/en/10118194-0001LF/609-4618-1-ND/2785382
+f = fp.Footprint(name='SMD RA', description='Micro B right angle SMD')
+f.features = [
+    # Contacts
+    fp.SurfaceMountPad(name=1, center=(-1.3, -2.7), size=(0.4, 1.4)),
+    fp.SurfaceMountPad(name=2, center=(-0.65, -2.7), size=(0.4, 1.4)),
+    fp.SurfaceMountPad(name=3, center=(0, -2.7), size=(0.4, 1.4)),
+    fp.SurfaceMountPad(name=4, center=(0.65, -2.7), size=(0.4, 1.4)),
+    fp.SurfaceMountPad(name=5, center=(1.3, -2.7), size=(0.4, 1.4)),
 
+    # Rear strain relief tabs
+    # TODO: need support for oval drill holes here.
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-2.5, -2.7), size=(1.25, 0.95), drill_size=0.85),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(2.5, -2.7), size=(1.25, 0.95), drill_size=0.85),
 
-d = l.device('AP2120N').description('3.3V LDO Regulator')
-d.pin(1).name('GND').power()
-d.pin(2).name('Vout').power()
-d.pin(3).name('Vin').power()
-b = ICBuilder()
-b.dir(kidraw.RIGHT).pin(3)
-b.dir(kidraw.LEFT).pin(2)
-b.dir(kidraw.UP).pin(1)
-b.build(d.schematic())
+    # Front strain relief tabs
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-3.5, 0), size=(0.9, 1.55), drill_size=1.15),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(3.5, 0), size=(0.9, 1.55), drill_size=1.15),
 
-d = l.device('STM32F042K6T6').description('ARM 32-bit MCU with USB')
-d.pin(1, 5, 17).name('VDD').power()
-d.pin(16, 32).name('VSS').power()
-d.pin(4).name('~RST').input()
-d.pin(6).name('PWM2_1').output()
-d.pin(7).name('PWM2_2').output()
-d.pin(8).name('PWM2_3').output()
-d.pin(9).name('PWM2_4').output()
-d.pin(10).name('PWM14').output()
-d.pin(12).name('PWM3_1').output()
-d.pin(13).name('PWM3_2').output()
-d.pin(14).name('PWM3_3').output()
-d.pin(15).name('PWM3_4').output()
-d.pin(18).name('PWM1_1').output()
-d.pin(19).name('PWM1_2').output()
-d.pin(20).name('PWM1_3').output()
-d.pin(21).name('USB_D-').bidirectional()
-d.pin(22).name('USB_D+').bidirectional()
-d.pin(23).name('SWDIO').bidirectional()
-d.pin(24).name('SWCLK').bidirectional()
-d.pin(31).name('BOOT').input()
-b = ICBuilder().pin_len(300)
-b.dir(kidraw.UP)
-b.gap(3)
-b.dir(kidraw.LEFT)
-for n in [6, 7, 8, 9, 10, 12, 13, 14, 15, 18, 19, 20]:
-    b.pin(n)
-b.dir(kidraw.RIGHT)
-b.pin(1, 5, 17)
-b.gap(1)
-b.pin(4).active_low()
-b.pin(31)
-b.gap(1)
-b.pin(21)
-b.pin(22)
-b.gap(1)
-b.pin(23)
-b.pin(24)
-b.gap(1)
-b.pin(16, 32)
-b.build(d.schematic())
+    # Front solder pads (for more mechanical strength)
+    fp.SurfaceMountPad(name='shell', center=(-1, 0), size=(1.5, 1.5)),
+    fp.SurfaceMountPad(name='shell', center=(1, 0), size=(1.5, 1.5)),
 
-d = l.device('12V Conn').refdes('CON').description('12V terminal').hide_name()
-d.pin(1).name('+').power()
-d.pin(2).name('-').power()
-b = ICBuilder().pin_len(100).dir(kidraw.LEFT)
-b.pin(1)
-b.pin(2)
-b.build(d.schematic())
+    # PCB edge marker
+    fp.Line(start=(-4, 1.45), end=(4, 1.45), layer=fp.Layer.TopAssembly)
+]
+l.devices.append(kidraw.Device(s, [f]))
 
-d = l.device('USB Micro').refdes('CON').description('USB Micro Connector')
-d.pin(1).name('VBus').power()
-d.pin(2).name('D+').bidirectional()
-d.pin(3).name('D-').bidirectional()
-d.pin(5).name('GND').power()
-b = ICBuilder().dir(kidraw.LEFT)
-b.pin(1)
-b.pin(2)
-b.pin(3)
-b.pin(5)
-b.build(d.schematic())
-
-l.write('parts')
+l.save()
