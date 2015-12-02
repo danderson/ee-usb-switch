@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dave/hack/ee/usb-switch/usb_switch.sch</source>
+    <date>Sun 29 Nov 2015 03:34:06 PM PST</date>
+    <tool>Eeschema 0.201511251016+6329~38~ubuntu15.10.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>USB controlled load switcher with level shifting - 12 terminal</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>usb_switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value="To enter programming mode: connect USB, hold down S2, then reboot by pressing S1."/>
+        <comment number="3" value="Warning: loads are NOT galvanically isolated!"/>
+        <comment number="4" value="Absolute Maximum Ratings: 15V line voltage, 1A per load"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Switch 02/" tstamps="/56404EB0/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Switch 03/" tstamps="/56404EFB/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Switch 04/" tstamps="/56404F34/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Switch 05/" tstamps="/56404F4B/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Switch 06/" tstamps="/56404F62/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Switch 07/" tstamps="/56404F79/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Switch 08/" tstamps="/56404F90/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/Switch 09/" tstamps="/56404FA7/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/Switch 10/" tstamps="/56404FBE/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/Switch 01/" tstamps="/564035AC/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="12" name="/Switch 11/" tstamps="/56404FD5/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="13" name="/Switch 12/" tstamps="/56405002/">
+      <title_block>
+        <title>Load switch</title>
+        <company>David Anderson   https://www.dave.tf</company>
+        <rev>2</rev>
+        <date>2015-11-17</date>
+        <source>switch.sch</source>
+        <comment number="1" value="License: Creative Commons Attribution 4.0 International"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="CON2">
+      <value>USB</value>
+      <libsource lib="parts" part="USB_Micro"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5640565D</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56418FE5</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>564190EE</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>3.3V</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56407D9B</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>12V</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56408233</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>5V</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>564083D6</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10nF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5640800F</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56408092</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>564087DE</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56408865</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>RST</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5640BB8C</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>BOOT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5640BC15</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5640D568</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>22R</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641B133</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>22R</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641B1D4</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>47pF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641B257</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>47pF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641B2F0</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>Test_Point</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641CF12</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>Test_Point</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641CFA3</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>GND</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641A50E</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>SWD</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641D2CC</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>SWC</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5641D363</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AP2120N</value>
+      <libsource lib="parts" part="AP2120N"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>564ADB98</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>STM32F042K6T6</value>
+      <libsource lib="parts" part="STM32F042K6T6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>564AD556</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 02/" tstamps="/56404EB0/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 03/" tstamps="/56404EFB/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 04/" tstamps="/56404F34/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 05/" tstamps="/56404F4B/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 06/" tstamps="/56404F62/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 07/" tstamps="/56404F79/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP24">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 08/" tstamps="/56404F90/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP26">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP25">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 09/" tstamps="/56404FA7/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP28">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP27">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 10/" tstamps="/56404FBE/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP30">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP29">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 01/" tstamps="/564035AC/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP32">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP31">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 11/" tstamps="/56404FD5/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>56403612</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>56403653</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>1µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>564036B9</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>10µF</value>
+      <libsource lib="parts" part="Capacitor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>56403780</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>2k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>564037A5</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>10k</value>
+      <libsource lib="parts" part="Resistor"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>564058BF</tstamp>
+    </comp>
+    <comp ref="TP34">
+      <value>OUT</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>56407886</tstamp>
+    </comp>
+    <comp ref="TP33">
+      <value>SW</value>
+      <libsource lib="parts" part="Test_Point"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>56407914</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>Si1869DH</value>
+      <libsource lib="parts" part="Si1869DH"/>
+      <sheetpath names="/Switch 12/" tstamps="/56405002/"/>
+      <tstamp>564035B5</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="parts" part="AP2120N">
+      <description>3.3V LDO Regulator</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2120N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="Vout" type="power_in"/>
+        <pin num="3" name="Vin" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="Capacitor">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="Resistor">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="STM32F042K6T6">
+      <description>ARM 32-bit MCU with USB</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32F042K6T6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="~" type="NotConnected"/>
+        <pin num="3" name="~" type="NotConnected"/>
+        <pin num="4" name="~RST" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="PWM2_1" type="output"/>
+        <pin num="7" name="PWM2_2" type="output"/>
+        <pin num="8" name="PWM2_3" type="output"/>
+        <pin num="9" name="PWM2_4" type="output"/>
+        <pin num="10" name="PWM14_1" type="output"/>
+        <pin num="11" name="~" type="NotConnected"/>
+        <pin num="12" name="PWM3_1" type="output"/>
+        <pin num="13" name="PWM3_2" type="output"/>
+        <pin num="14" name="PWM3_3" type="output"/>
+        <pin num="15" name="PWM3_4" type="output"/>
+        <pin num="16" name="VSS" type="power_in"/>
+        <pin num="17" name="VDD" type="power_in"/>
+        <pin num="18" name="PWM1_1" type="output"/>
+        <pin num="19" name="PWM1_2" type="output"/>
+        <pin num="20" name="PWM1_3" type="output"/>
+        <pin num="21" name="USB_D-" type="BiDi"/>
+        <pin num="22" name="USB_D+" type="BiDi"/>
+        <pin num="23" name="SWDIO" type="BiDi"/>
+        <pin num="24" name="SWCLK" type="BiDi"/>
+        <pin num="25" name="~" type="NotConnected"/>
+        <pin num="26" name="~" type="NotConnected"/>
+        <pin num="27" name="~" type="NotConnected"/>
+        <pin num="28" name="~" type="NotConnected"/>
+        <pin num="29" name="~" type="NotConnected"/>
+        <pin num="30" name="~" type="NotConnected"/>
+        <pin num="31" name="BOOT" type="input"/>
+        <pin num="32" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="Si1869DH">
+      <description>Load Switch with Level Shift</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Si1869DH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Slew" type="passive"/>
+        <pin num="2" name="Vout" type="power_in"/>
+        <pin num="3" name="Vout" type="power_in"/>
+        <pin num="4" name="Vin" type="power_in"/>
+        <pin num="5" name="SW" type="input"/>
+        <pin num="6" name="Bias" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="Test_Point">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">Test_Point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="parts" part="USB_Micro">
+      <description>USB Micro Connector</description>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">USB_Micro</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBus" type="power_in"/>
+        <pin num="2" name="D+" type="BiDi"/>
+        <pin num="3" name="D-" type="BiDi"/>
+        <pin num="4" name="~" type="NotConnected"/>
+        <pin num="5" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="parts">
+      <uri>/home/dave/hack/ee/usb-switch/parts.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="2" name="VSS">
+      <node ref="U2" pin="32"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="3" name="VDD">
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U2" pin="17"/>
+    </net>
+    <net code="4" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="6" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="7" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="8" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="9" name="Net-(U2-Pad20)">
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="10" name="Net-(U2-Pad30)">
+      <node ref="U2" pin="30"/>
+    </net>
+    <net code="11" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="12" name="Net-(U2-Pad21)">
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad31)">
+      <node ref="U2" pin="31"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad22)">
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="16" name="Net-(U2-Pad13)">
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="17" name="Net-(U2-Pad23)">
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="18" name="Net-(U2-Pad14)">
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad24)">
+      <node ref="U2" pin="24"/>
+    </net>
+    <net code="20" name="Net-(U2-Pad15)">
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad25)">
+      <node ref="U2" pin="25"/>
+    </net>
+    <net code="22" name="Net-(U2-Pad26)">
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="23" name="Net-(U2-Pad27)">
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad18)">
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="25" name="Net-(U2-Pad28)">
+      <node ref="U2" pin="28"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad19)">
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="27" name="Net-(U2-Pad29)">
+      <node ref="U2" pin="29"/>
+    </net>
+    <net code="28" name="/Switch 10/SW">
+      <node ref="R29" pin="2"/>
+      <node ref="TP27" pin="1"/>
+    </net>
+    <net code="29" name="/Switch 11/SW">
+      <node ref="TP31" pin="1"/>
+      <node ref="R35" pin="2"/>
+    </net>
+    <net code="30" name="/Switch 12/SW">
+      <node ref="TP33" pin="1"/>
+      <node ref="R38" pin="2"/>
+    </net>
+    <net code="31" name="Line">
+      <node ref="C23" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="R31" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="TP9" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R34" pin="1"/>
+      <node ref="C41" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R37" pin="1"/>
+      <node ref="C32" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="32" name="/Switch 01/SW">
+      <node ref="R32" pin="2"/>
+      <node ref="TP29" pin="1"/>
+    </net>
+    <net code="33" name="/Switch 02/SW">
+      <node ref="R5" pin="2"/>
+      <node ref="TP11" pin="1"/>
+    </net>
+    <net code="34" name="/Switch 03/SW">
+      <node ref="TP13" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="35" name="/Switch 04/SW">
+      <node ref="R11" pin="2"/>
+      <node ref="TP15" pin="1"/>
+    </net>
+    <net code="36" name="/Switch 05/SW">
+      <node ref="R14" pin="2"/>
+      <node ref="TP17" pin="1"/>
+    </net>
+    <net code="37" name="/Switch 06/SW">
+      <node ref="TP19" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="38" name="/Switch 07/SW">
+      <node ref="R20" pin="2"/>
+      <node ref="TP21" pin="1"/>
+    </net>
+    <net code="39" name="/Switch 08/SW">
+      <node ref="TP23" pin="1"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="40" name="/Switch 09/SW">
+      <node ref="R26" pin="2"/>
+      <node ref="TP25" pin="1"/>
+    </net>
+    <net code="41" name="Net-(TP1-Pad1)">
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="42" name="Net-(R1-Pad1)">
+      <node ref="TP2" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="43" name="+3.3V">
+      <node ref="C4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="TP7" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="44" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="45" name="Net-(C7-Pad2)">
+      <node ref="TP3" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="46" name="+5V">
+      <node ref="U1" pin="3"/>
+      <node ref="C5" pin="2"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="47" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="48" name="Net-(CON2-Pad1)">
+      <node ref="CON2" pin="1"/>
+    </net>
+    <net code="49" name="Net-(CON2-Pad2)">
+      <node ref="CON2" pin="2"/>
+    </net>
+    <net code="50" name="Net-(CON2-Pad3)">
+      <node ref="CON2" pin="3"/>
+    </net>
+    <net code="51" name="Net-(CON2-Pad4)">
+      <node ref="CON2" pin="4"/>
+    </net>
+    <net code="52" name="Net-(CON2-Pad5)">
+      <node ref="CON2" pin="5"/>
+    </net>
+    <net code="53" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="54" name="GND">
+      <node ref="C23" pin="1"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R35" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R36" pin="1"/>
+      <node ref="C41" pin="1"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C44" pin="1"/>
+      <node ref="R39" pin="1"/>
+      <node ref="R38" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C20" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="R29" pin="1"/>
+      <node ref="C28" pin="2"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="R30" pin="1"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C32" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="R27" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C29" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="TP10" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R32" pin="1"/>
+      <node ref="R33" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="C37" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C17" pin="1"/>
+    </net>
+    <net code="55" name="Net-(TP4-Pad1)">
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="56" name="Net-(TP5-Pad1)">
+      <node ref="TP5" pin="1"/>
+    </net>
+    <net code="57" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="58" name="Net-(C8-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="TP6" pin="1"/>
+    </net>
+    <net code="59" name="Vout">
+      <node ref="U5" pin="3"/>
+      <node ref="U13" pin="3"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U9" pin="2"/>
+      <node ref="U9" pin="3"/>
+      <node ref="U13" pin="2"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U7" pin="3"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U12" pin="3"/>
+      <node ref="U14" pin="3"/>
+      <node ref="U14" pin="2"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U8" pin="3"/>
+      <node ref="U10" pin="2"/>
+      <node ref="U10" pin="3"/>
+      <node ref="U11" pin="2"/>
+      <node ref="U11" pin="3"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U12" pin="2"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="60" name="Net-(U12-Pad1)">
+      <node ref="U12" pin="1"/>
+    </net>
+    <net code="61" name="Net-(U12-Pad4)">
+      <node ref="U12" pin="4"/>
+    </net>
+    <net code="62" name="Net-(U12-Pad5)">
+      <node ref="U12" pin="5"/>
+    </net>
+    <net code="63" name="Net-(U12-Pad6)">
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="64" name="Net-(C36-Pad2)">
+      <node ref="R31" pin="2"/>
+      <node ref="C36" pin="2"/>
+    </net>
+    <net code="65" name="Net-(R33-Pad2)">
+      <node ref="R33" pin="2"/>
+    </net>
+    <net code="66" name="Net-(C36-Pad1)">
+      <node ref="C37" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="TP30" pin="1"/>
+    </net>
+    <net code="67" name="Net-(U3-Pad1)">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="68" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="69" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="70" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="71" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="72" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="73" name="Net-(C10-Pad1)">
+      <node ref="TP12" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="74" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="75" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="76" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="77" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="78" name="Net-(C12-Pad2)">
+      <node ref="C12" pin="2"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="79" name="Net-(R9-Pad2)">
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="80" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="TP14" pin="1"/>
+    </net>
+    <net code="81" name="Net-(C15-Pad1)">
+      <node ref="TP16" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C15" pin="1"/>
+    </net>
+    <net code="82" name="Net-(R12-Pad2)">
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="83" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="84" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="85" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="86" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="87" name="Net-(U5-Pad1)">
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="88" name="Net-(U6-Pad1)">
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="89" name="Net-(C18-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="TP18" pin="1"/>
+    </net>
+    <net code="90" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="91" name="Net-(C18-Pad2)">
+      <node ref="C18" pin="2"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="92" name="Net-(U6-Pad6)">
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="93" name="Net-(U6-Pad5)">
+      <node ref="U6" pin="5"/>
+    </net>
+    <net code="94" name="Net-(U6-Pad4)">
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="95" name="Net-(C21-Pad1)">
+      <node ref="C22" pin="1"/>
+      <node ref="TP20" pin="1"/>
+      <node ref="C21" pin="1"/>
+    </net>
+    <net code="96" name="Net-(R18-Pad2)">
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="97" name="Net-(C21-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="C21" pin="2"/>
+    </net>
+    <net code="98" name="Net-(U7-Pad6)">
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="99" name="Net-(U7-Pad5)">
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="100" name="Net-(U7-Pad4)">
+      <node ref="U7" pin="4"/>
+    </net>
+    <net code="101" name="Net-(U7-Pad1)">
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="102" name="Net-(U8-Pad1)">
+      <node ref="U8" pin="1"/>
+    </net>
+    <net code="103" name="Net-(U8-Pad4)">
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="104" name="Net-(U8-Pad5)">
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="105" name="Net-(U8-Pad6)">
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="106" name="Net-(C24-Pad2)">
+      <node ref="C24" pin="2"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="107" name="Net-(R21-Pad2)">
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="108" name="Net-(C24-Pad1)">
+      <node ref="C25" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="TP22" pin="1"/>
+    </net>
+    <net code="109" name="Net-(C27-Pad1)">
+      <node ref="C27" pin="1"/>
+      <node ref="TP24" pin="1"/>
+      <node ref="C28" pin="1"/>
+    </net>
+    <net code="110" name="Net-(R24-Pad2)">
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="111" name="Net-(C27-Pad2)">
+      <node ref="C27" pin="2"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="112" name="Net-(U9-Pad6)">
+      <node ref="U9" pin="6"/>
+    </net>
+    <net code="113" name="Net-(U9-Pad5)">
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="114" name="Net-(U9-Pad4)">
+      <node ref="U9" pin="4"/>
+    </net>
+    <net code="115" name="Net-(U9-Pad1)">
+      <node ref="U9" pin="1"/>
+    </net>
+    <net code="116" name="Net-(C30-Pad1)">
+      <node ref="TP26" pin="1"/>
+      <node ref="C30" pin="1"/>
+      <node ref="C31" pin="1"/>
+    </net>
+    <net code="117" name="Net-(R27-Pad2)">
+      <node ref="R27" pin="2"/>
+    </net>
+    <net code="118" name="Net-(C30-Pad2)">
+      <node ref="R25" pin="2"/>
+      <node ref="C30" pin="2"/>
+    </net>
+    <net code="119" name="Net-(U10-Pad6)">
+      <node ref="U10" pin="6"/>
+    </net>
+    <net code="120" name="Net-(U10-Pad5)">
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="121" name="Net-(U10-Pad4)">
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="122" name="Net-(U10-Pad1)">
+      <node ref="U10" pin="1"/>
+    </net>
+    <net code="123" name="Net-(C33-Pad1)">
+      <node ref="C34" pin="1"/>
+      <node ref="C33" pin="1"/>
+      <node ref="TP28" pin="1"/>
+    </net>
+    <net code="124" name="Net-(R30-Pad2)">
+      <node ref="R30" pin="2"/>
+    </net>
+    <net code="125" name="Net-(C33-Pad2)">
+      <node ref="C33" pin="2"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="126" name="Net-(U11-Pad6)">
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="127" name="Net-(U11-Pad5)">
+      <node ref="U11" pin="5"/>
+    </net>
+    <net code="128" name="Net-(U11-Pad4)">
+      <node ref="U11" pin="4"/>
+    </net>
+    <net code="129" name="Net-(U11-Pad1)">
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="130" name="Net-(U13-Pad1)">
+      <node ref="U13" pin="1"/>
+    </net>
+    <net code="131" name="Net-(U13-Pad4)">
+      <node ref="U13" pin="4"/>
+    </net>
+    <net code="132" name="Net-(U13-Pad5)">
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="133" name="Net-(U13-Pad6)">
+      <node ref="U13" pin="6"/>
+    </net>
+    <net code="134" name="Net-(C39-Pad2)">
+      <node ref="C39" pin="2"/>
+      <node ref="R34" pin="2"/>
+    </net>
+    <net code="135" name="Net-(R36-Pad2)">
+      <node ref="R36" pin="2"/>
+    </net>
+    <net code="136" name="Net-(C39-Pad1)">
+      <node ref="C40" pin="1"/>
+      <node ref="TP32" pin="1"/>
+      <node ref="C39" pin="1"/>
+    </net>
+    <net code="137" name="Net-(U14-Pad1)">
+      <node ref="U14" pin="1"/>
+    </net>
+    <net code="138" name="Net-(U14-Pad4)">
+      <node ref="U14" pin="4"/>
+    </net>
+    <net code="139" name="Net-(U14-Pad5)">
+      <node ref="U14" pin="5"/>
+    </net>
+    <net code="140" name="Net-(U14-Pad6)">
+      <node ref="U14" pin="6"/>
+    </net>
+    <net code="141" name="Net-(C42-Pad2)">
+      <node ref="R37" pin="2"/>
+      <node ref="C42" pin="2"/>
+    </net>
+    <net code="142" name="Net-(R39-Pad2)">
+      <node ref="R39" pin="2"/>
+    </net>
+    <net code="143" name="Net-(C42-Pad1)">
+      <node ref="TP34" pin="1"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C42" pin="1"/>
+    </net>
+  </nets>
+</export>

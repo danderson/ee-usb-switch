@@ -15,7 +15,7 @@
   )
 )
 (fp_text value "VAL"
-  (at 0 2.45)
+  (at 0 3.15)
   (layer F.Fab)
   #hide
   (effects
@@ -154,8 +154,32 @@
   #(thermal_gap 0)
 )
 (fp_line
-  (start -4 1.45)
-  (end 4 1.45)
+  (start -5 1.45)
+  (end 5 1.45)
+  (layer F.Fab)
+  (width 0.15)
+)
+(fp_line
+  (start -4 2.15)
+  (end 4 2.15)
+  (layer F.Fab)
+  (width 0.15)
+)
+(fp_line
+  (start 4 2.15)
+  (end 4 -2.85)
+  (layer F.Fab)
+  (width 0.15)
+)
+(fp_line
+  (start 4 -2.85)
+  (end -4 -2.85)
+  (layer F.Fab)
+  (width 0.15)
+)
+(fp_line
+  (start -4 -2.85)
+  (end -4 2.15)
   (layer F.Fab)
   (width 0.15)
 )
