@@ -5,7 +5,7 @@ EELAYER 25 0
 EELAYER END
 $Descr User 5197 4331
 encoding utf-8
-Sheet 6 6
+Sheet 2 7
 Title "Load switch"
 Date "2015-11-17"
 Rev "2"
@@ -16,25 +16,27 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Resistor R5
+L Resistor R19
 U 1 1 56403612
 P 1800 1250
-AR Path="/56404EFB/56403612" Ref="R5"  Part="1" 
-AR Path="/56404F34/56403612" Ref="R8"  Part="1" 
-AR Path="/56404F4B/56403612" Ref="R11"  Part="1" 
-AR Path="/56404F62/56403612" Ref="R14"  Part="1" 
-AR Path="/56404F79/56403612" Ref="R17"  Part="1" 
-F 0 "R5" H 1800 1289 50  0000 C BNN
+AR Path="/565FC611/56403612" Ref="R19"  Part="1" 
+AR Path="/56404EFB/56403612" Ref="R4"  Part="1" 
+AR Path="/56404F34/56403612" Ref="R7"  Part="1" 
+AR Path="/56404F4B/56403612" Ref="R10"  Part="1" 
+AR Path="/56404F62/56403612" Ref="R13"  Part="1" 
+AR Path="/56404F79/56403612" Ref="R16"  Part="1" 
+F 0 "R4" H 1800 1289 50  0000 C BNN
 F 1 "10k" H 1800 1211 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 1800 1250 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 1800 1250 50  0001 C CNN
 F 3 "" H 1800 1250 50  0001 C CNN
 	1    1800 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Capacitor C9
+L Capacitor C24
 U 1 1 56403653
 P 3000 1250
+AR Path="/565FC611/56403653" Ref="C24"  Part="1" 
 AR Path="/56404EFB/56403653" Ref="C9"  Part="1" 
 AR Path="/56404F34/56403653" Ref="C12"  Part="1" 
 AR Path="/56404F4B/56403653" Ref="C15"  Part="1" 
@@ -42,47 +44,50 @@ AR Path="/56404F62/56403653" Ref="C18"  Part="1"
 AR Path="/56404F79/56403653" Ref="C21"  Part="1" 
 F 0 "C9" H 3000 1300 50  0000 C BNN
 F 1 "1µF" H 3000 1200 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 3000 1250 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 3000 1250 50  0001 C CNN
 F 3 "" H 3000 1250 50  0001 C CNN
 	1    3000 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Capacitor C10
+L Capacitor C26
 U 1 1 564036B9
 P 3250 1850
-AR Path="/56404EFB/564036B9" Ref="C10"  Part="1" 
-AR Path="/56404F34/564036B9" Ref="C13"  Part="1" 
-AR Path="/56404F4B/564036B9" Ref="C16"  Part="1" 
-AR Path="/56404F62/564036B9" Ref="C19"  Part="1" 
-AR Path="/56404F79/564036B9" Ref="C22"  Part="1" 
-F 0 "C10" H 3250 1900 50  0000 C BNN
+AR Path="/565FC611/564036B9" Ref="C26"  Part="1" 
+AR Path="/56404EFB/564036B9" Ref="C11"  Part="1" 
+AR Path="/56404F34/564036B9" Ref="C14"  Part="1" 
+AR Path="/56404F4B/564036B9" Ref="C17"  Part="1" 
+AR Path="/56404F62/564036B9" Ref="C20"  Part="1" 
+AR Path="/56404F79/564036B9" Ref="C23"  Part="1" 
+F 0 "C11" H 3250 1900 50  0000 C BNN
 F 1 "1µF" H 3250 1800 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 3250 1850 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 3250 1850 50  0001 C CNN
 F 3 "" H 3250 1850 50  0001 C CNN
 	1    3250 1850
 	0    -1   1    0   
 $EndComp
 $Comp
-L Capacitor C8
+L Capacitor C25
 U 1 1 56403780
 P 1800 1850
-AR Path="/56404EFB/56403780" Ref="C8"  Part="1" 
-AR Path="/56404F34/56403780" Ref="C11"  Part="1" 
-AR Path="/56404F4B/56403780" Ref="C14"  Part="1" 
-AR Path="/56404F62/56403780" Ref="C17"  Part="1" 
-AR Path="/56404F79/56403780" Ref="C20"  Part="1" 
-F 0 "C8" H 1800 1900 50  0000 C BNN
+AR Path="/565FC611/56403780" Ref="C25"  Part="1" 
+AR Path="/56404EFB/56403780" Ref="C10"  Part="1" 
+AR Path="/56404F34/56403780" Ref="C13"  Part="1" 
+AR Path="/56404F4B/56403780" Ref="C16"  Part="1" 
+AR Path="/56404F62/56403780" Ref="C19"  Part="1" 
+AR Path="/56404F79/56403780" Ref="C22"  Part="1" 
+F 0 "C10" H 1800 1900 50  0000 C BNN
 F 1 "10µF" H 1800 1800 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 1800 1850 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 1800 1850 50  0001 C CNN
 F 3 "" H 1800 1850 50  0001 C CNN
 	1    1800 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Resistor R6
+L Resistor R21
 U 1 1 564037A5
 P 2850 1850
+AR Path="/565FC611/564037A5" Ref="R21"  Part="1" 
 AR Path="/56404EFB/564037A5" Ref="R6"  Part="1" 
 AR Path="/56404F34/564037A5" Ref="R9"  Part="1" 
 AR Path="/56404F4B/564037A5" Ref="R12"  Part="1" 
@@ -90,7 +95,7 @@ AR Path="/56404F62/564037A5" Ref="R15"  Part="1"
 AR Path="/56404F79/564037A5" Ref="R18"  Part="1" 
 F 0 "R6" H 2850 1889 50  0000 C BNN
 F 1 "2k" H 2850 1811 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 2850 1850 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 2850 1850 50  0001 C CNN
 F 3 "" H 2850 1850 50  0001 C CNN
 	1    2850 1850
 	0    -1   -1   0   
@@ -98,17 +103,18 @@ $EndComp
 Text HLabel 1200 1650 0    60   Input ~ 0
 SW
 $Comp
-L Resistor R4
+L Resistor R20
 U 1 1 564058BF
 P 1350 1850
-AR Path="/56404EFB/564058BF" Ref="R4"  Part="1" 
-AR Path="/56404F34/564058BF" Ref="R7"  Part="1" 
-AR Path="/56404F4B/564058BF" Ref="R10"  Part="1" 
-AR Path="/56404F62/564058BF" Ref="R13"  Part="1" 
-AR Path="/56404F79/564058BF" Ref="R16"  Part="1" 
-F 0 "R4" H 1350 1889 50  0000 C BNN
+AR Path="/565FC611/564058BF" Ref="R20"  Part="1" 
+AR Path="/56404EFB/564058BF" Ref="R5"  Part="1" 
+AR Path="/56404F34/564058BF" Ref="R8"  Part="1" 
+AR Path="/56404F4B/564058BF" Ref="R11"  Part="1" 
+AR Path="/56404F62/564058BF" Ref="R14"  Part="1" 
+AR Path="/56404F79/564058BF" Ref="R17"  Part="1" 
+F 0 "R5" H 1350 1889 50  0000 C BNN
 F 1 "10k" H 1350 1811 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 1350 1850 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 1350 1850 50  0001 C CNN
 F 3 "" H 1350 1850 50  0001 C CNN
 	1    1350 1850
 	0    -1   -1   0   
@@ -157,9 +163,10 @@ Wire Wire Line
 Wire Wire Line
 	3500 2000 1350 2000
 $Comp
-L Si1869DH U3
+L Si1869DH U8
 U 1 1 564035B5
 P 2350 1550
+AR Path="/565FC611/564035B5" Ref="U8"  Part="1" 
 AR Path="/56404EFB/564035B5" Ref="U3"  Part="1" 
 AR Path="/56404F34/564035B5" Ref="U4"  Part="1" 
 AR Path="/56404F4B/564035B5" Ref="U5"  Part="1" 
@@ -178,9 +185,10 @@ Connection ~ 2350 1050
 Wire Wire Line
 	1200 1650 1950 1650
 $Comp
-L GND #PWR023
+L GND #PWR033
 U 1 1 564C00D8
 P 2350 2100
+AR Path="/565FC611/564C00D8" Ref="#PWR033"  Part="1" 
 AR Path="/56404EFB/564C00D8" Ref="#PWR023"  Part="1" 
 AR Path="/56404F34/564C00D8" Ref="#PWR025"  Part="1" 
 AR Path="/56404F4B/564C00D8" Ref="#PWR027"  Part="1" 
@@ -194,9 +202,10 @@ F 3 "" H 2350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Line #PWR024
+L Line #PWR034
 U 1 1 564D121A
 P 1550 1100
+AR Path="/565FC611/564D121A" Ref="#PWR034"  Part="1" 
 AR Path="/56404EFB/564D121A" Ref="#PWR024"  Part="1" 
 AR Path="/56404F34/564D121A" Ref="#PWR026"  Part="1" 
 AR Path="/56404F4B/564D121A" Ref="#PWR028"  Part="1" 
@@ -210,15 +219,16 @@ F 3 "" H 1550 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2_Post_Terminal CON3
+L 2_Post_Terminal CON6
 U 1 1 565B9FD4
 P 3850 1550
-AR Path="/56404EFB/565B9FD4" Ref="CON3"  Part="1" 
-AR Path="/56404F34/565B9FD4" Ref="CON4"  Part="1" 
-AR Path="/56404F4B/565B9FD4" Ref="CON5"  Part="1" 
-AR Path="/56404F62/565B9FD4" Ref="CON6"  Part="1" 
-AR Path="/56404F79/565B9FD4" Ref="CON7"  Part="1" 
-F 0 "CON3" H 3850 1365 50  0000 C CNN
+AR Path="/565FC611/565B9FD4" Ref="CON6"  Part="1" 
+AR Path="/56404EFB/565B9FD4" Ref="CON1"  Part="1" 
+AR Path="/56404F34/565B9FD4" Ref="CON2"  Part="1" 
+AR Path="/56404F4B/565B9FD4" Ref="CON3"  Part="1" 
+AR Path="/56404F62/565B9FD4" Ref="CON4"  Part="1" 
+AR Path="/56404F79/565B9FD4" Ref="CON5"  Part="1" 
+F 0 "CON1" H 3850 1365 50  0000 C CNN
 F 1 "2_Post_Terminal" H 3850 1685 50  0001 C CNN
 F 2 "parts:2_Post_Terminal_OSTTE020104" H 3850 1550 50  0001 C CNN
 F 3 "" H 3850 1550 50  0001 C CNN

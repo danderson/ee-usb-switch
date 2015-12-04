@@ -5,7 +5,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "USB controlled load switcher with level shifting - 12 terminal"
 Date "2015-11-17"
 Rev "2"
@@ -16,69 +16,69 @@ Comment3 "Warning: loads are NOT galvanically isolated!"
 Comment4 "Absolute Maximum Ratings: 15V line voltage, 1A per load"
 $EndDescr
 $Sheet
-S 7600 3150 550  200 
+S 7600 3100 550  200 
 U 56404EFB
 F0 "Switch 1" 60
 F1 "switch.sch" 60
-F2 "SW" I L 7600 3250 60 
+F2 "SW" I L 7600 3200 60 
 $EndSheet
 $Sheet
-S 7600 3550 550  200 
+S 7600 3500 550  200 
 U 56404F34
 F0 "Switch 2" 60
 F1 "switch.sch" 60
-F2 "SW" I L 7600 3650 60 
+F2 "SW" I L 7600 3600 60 
 $EndSheet
 $Sheet
-S 7600 3950 550  200 
+S 7600 3900 550  200 
 U 56404F4B
 F0 "Switch 3" 60
 F1 "switch.sch" 60
-F2 "SW" I L 7600 4050 60 
+F2 "SW" I L 7600 4000 60 
 $EndSheet
 $Sheet
-S 7600 4350 550  200 
+S 7600 4300 550  200 
 U 56404F62
 F0 "Switch 4" 60
 F1 "switch.sch" 60
-F2 "SW" I L 7600 4450 60 
+F2 "SW" I L 7600 4400 60 
 $EndSheet
 $Sheet
-S 7600 4750 550  200 
+S 7600 4700 550  200 
 U 56404F79
 F0 "Switch 5" 60
 F1 "switch.sch" 60
-F2 "SW" I L 7600 4850 60 
+F2 "SW" I L 7600 4800 60 
 $EndSheet
 $Comp
-L USB_Micro CON1
+L USB_Micro USB1
 U 1 1 5640565D
 P 3300 4750
-F 0 "CON1" H 3300 5300 50  0000 C BNN
-F 1 "USB" H 3300 4200 50  0000 C TNN
+F 0 "USB1" H 3300 4400 50  0000 C CNN
+F 1 "USB" H 3300 4400 50  0001 C TNN
 F 2 "parts:USB_Micro_SMD_RA" H 3300 4750 50  0001 C CNN
 F 3 "" H 3300 4750 50  0001 C CNN
 	1    3300 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitor C7
+L Capacitor C5
 U 1 1 56418FE5
 P 6350 1950
-F 0 "C7" H 6350 2000 50  0000 C BNN
+F 0 "C5" H 6350 2000 50  0000 C BNN
 F 1 "10µF" H 6350 1900 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 6350 1950 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 6350 1950 50  0001 C CNN
 F 3 "" H 6350 1950 50  0001 C CNN
 	1    6350 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Capacitor C6
+L Capacitor C4
 U 1 1 564190EE
 P 5350 1950
-F 0 "C6" H 5350 2000 50  0000 C BNN
+F 0 "C4" H 5350 2000 50  0000 C BNN
 F 1 "1µF" H 5350 1900 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 5350 1950 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 5350 1950 50  0001 C CNN
 F 3 "" H 5350 1950 50  0001 C CNN
 	1    5350 1950
 	0    -1   -1   0   
@@ -86,12 +86,12 @@ $EndComp
 Text Notes 5450 2550 0    60   ~ 0
 MCU power supply
 $Comp
-L Capacitor C4
+L Capacitor C3
 U 1 1 5640800F
 P 4350 1700
-F 0 "C4" H 4350 1750 50  0000 C BNN
+F 0 "C3" H 4350 1750 50  0000 C BNN
 F 1 "100nF" H 4350 1650 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 4350 1700 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 4350 1700 50  0001 C CNN
 F 3 "" H 4350 1700 50  0001 C CNN
 	1    4350 1700
 	0    -1   -1   0   
@@ -102,7 +102,7 @@ U 1 1 564087DE
 P 3750 1700
 F 0 "C1" H 3750 1750 50  0000 C BNN
 F 1 "100nF" H 3750 1650 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 3750 1700 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 3750 1700 50  0001 C CNN
 F 3 "" H 3750 1700 50  0001 C CNN
 	1    3750 1700
 	0    -1   -1   0   
@@ -113,7 +113,7 @@ U 1 1 56408865
 P 4050 1700
 F 0 "C2" H 4050 1750 50  0000 C BNN
 F 1 "100nF" H 4050 1650 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 4050 1700 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 4050 1700 50  0001 C CNN
 F 3 "" H 4050 1700 50  0001 C CNN
 	1    4050 1700
 	0    -1   -1   0   
@@ -121,56 +121,56 @@ $EndComp
 Text Notes 3150 2550 0    60   ~ 0
 MCU decoupling:\n100nF between pins 1 and 32\n100nF between pins 16 and 17\n10nF+1µF between pins 5 and 32
 $Comp
-L Resistor R3
+L Resistor R1
 U 1 1 5640D568
 P 4250 3550
-F 0 "R3" H 4250 3589 50  0000 C BNN
+F 0 "R1" H 4250 3589 50  0000 C BNN
 F 1 "10k" H 4250 3511 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 4250 3550 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 4250 3550 50  0001 C CNN
 F 3 "" H 4250 3550 50  0001 C CNN
 	1    4250 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Resistor R1
+L Resistor R2
 U 1 1 5641B133
 P 3950 4650
-F 0 "R1" H 3950 4700 50  0000 C BNN
+F 0 "R2" H 3950 4700 50  0000 C BNN
 F 1 "22R" H 3950 4611 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 3950 4650 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 3950 4650 50  0001 C CNN
 F 3 "" H 3950 4650 50  0001 C CNN
 	1    3950 4650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Resistor R2
+L Resistor R3
 U 1 1 5641B1D4
 P 3950 4900
-F 0 "R2" H 3950 4950 50  0000 C BNN
+F 0 "R3" H 3950 4950 50  0000 C BNN
 F 1 "22R" H 3950 4850 50  0000 C TNN
-F 2 "parts:Resistor_0805" H 3950 4900 50  0001 C CNN
+F 2 "parts:Resistor_0603" H 3950 4900 50  0001 C CNN
 F 3 "" H 3950 4900 50  0001 C CNN
 	1    3950 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitor C5
+L Capacitor C8
 U 1 1 5641B257
 P 4450 5050
-F 0 "C5" H 4450 5100 50  0000 C BNN
+F 0 "C8" H 4450 5100 50  0000 C BNN
 F 1 "47pF" H 4450 5000 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 4450 5050 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 4450 5050 50  0001 C CNN
 F 3 "" H 4450 5050 50  0001 C CNN
 	1    4450 5050
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Capacitor C3
+L Capacitor C7
 U 1 1 5641B2F0
 P 4200 5050
-F 0 "C3" H 4200 5100 50  0000 C BNN
+F 0 "C7" H 4200 5100 50  0000 C BNN
 F 1 "47pF" H 4200 5000 50  0000 C TNN
-F 2 "parts:Capacitor_0805" H 4200 5050 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 4200 5050 50  0001 C CNN
 F 3 "" H 4200 5050 50  0001 C CNN
 	1    4200 5050
 	0    -1   -1   0   
@@ -209,11 +209,9 @@ Wire Wire Line
 Connection ~ 6350 1600
 Connection ~ 5350 1600
 Wire Notes Line
-	3100 1200 8500 1200
-Wire Notes Line
 	7300 1200 7300 6250
 Wire Notes Line
-	7300 2600 3100 2600
+	3100 2600 8500 2600
 Wire Notes Line
 	4950 1200 4950 5600
 Wire Wire Line
@@ -284,7 +282,7 @@ Wire Notes Line
 Wire Notes Line
 	3950 2600 3950 3950
 Wire Notes Line
-	3100 5600 7300 5600
+	3100 5600 8500 5600
 Text Notes 4150 2750 0    60   ~ 0
 Boot Control
 Text Notes 3600 4100 0    60   ~ 0
@@ -333,17 +331,6 @@ F 1 "GND" H 5850 2080 50  0000 C TNN
 F 2 "" H 5850 2200 50  0001 C CNN
 F 3 "" H 5850 2200 50  0001 C CNN
 	1    5850 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 564AE981
-P 3700 3500
-F 0 "#PWR03" H 3700 3520 50  0001 C BNN
-F 1 "GND" H 3700 3380 50  0000 C TNN
-F 2 "" H 3700 3500 50  0001 C CNN
-F 3 "" H 3700 3500 50  0001 C CNN
-	1    3700 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -514,13 +501,11 @@ Wire Wire Line
 	5400 4050 4800 4050
 Wire Wire Line
 	4800 4050 4800 4650
-Wire Notes Line
-	8500 1200 8500 6250
 Text Notes 5050 2750 0    60   ~ 0
 MCU
 Text Notes 3250 2750 0    60   ~ 0
 Line Power
-Text Notes 7550 2850 0    60   ~ 0
+Text Notes 7600 2750 0    60   ~ 0
 Load Switches
 Text Notes 4700 5700 0    60   ~ 0
 Power Nets
@@ -528,8 +513,6 @@ Wire Wire Line
 	3750 4550 3550 4550
 Wire Wire Line
 	3700 3250 3600 3250
-Wire Notes Line
-	8500 6250 3100 6250
 Wire Wire Line
 	3750 1600 3750 1500
 $Comp
@@ -568,10 +551,10 @@ $EndComp
 Wire Wire Line
 	4250 5950 4250 6050
 $Comp
-L 2_Post_Terminal CON2
+L 2_Post_Terminal LINE1
 U 1 1 565BB72A
 P 3350 3300
-F 0 "CON2" H 3350 3115 50  0000 C CNN
+F 0 "LINE1" H 3350 3100 50  0000 C CNN
 F 1 "2_Post_Terminal" H 3350 3435 50  0001 C CNN
 F 2 "parts:2_Post_Terminal_OSTTE020104" H 3350 3300 50  0001 C CNN
 F 3 "" H 3350 3300 50  0001 C CNN
@@ -632,38 +615,38 @@ Wire Wire Line
 Wire Wire Line
 	3750 1900 4350 1900
 Wire Wire Line
-	7600 4050 7000 4050
+	7400 4050 7000 4050
 Wire Wire Line
 	7000 3750 7400 3750
 Wire Wire Line
-	7400 3750 7400 3650
+	7400 3750 7400 3600
 Wire Wire Line
-	7400 3650 7600 3650
+	7400 3600 7600 3600
 Wire Wire Line
-	7600 3250 7400 3250
+	7600 3200 7400 3200
 Wire Wire Line
-	7400 3250 7400 3450
+	7400 3200 7400 3450
 Wire Wire Line
 	7400 3450 7000 3450
 Wire Wire Line
 	7000 4350 7400 4350
 Wire Wire Line
-	7400 4350 7400 4450
+	7400 4350 7400 4400
 Wire Wire Line
-	7400 4450 7600 4450
+	7400 4400 7600 4400
 Wire Wire Line
 	7000 4650 7400 4650
 Wire Wire Line
-	7400 4650 7400 4850
+	7400 4650 7400 4800
 Wire Wire Line
-	7400 4850 7600 4850
+	7400 4800 7600 4800
 $Comp
-L Capacitor C23
+L Capacitor C6
 U 1 1 565C52B7
 P 4750 3550
-F 0 "C23" H 4750 3485 50  0000 C CNN
+F 0 "C6" H 4750 3485 50  0000 C CNN
 F 1 "100nF" H 4750 3615 50  0000 C CNN
-F 2 "parts:Capacitor_0805" H 4750 3550 50  0001 C CNN
+F 2 "parts:Capacitor_0603" H 4750 3550 50  0001 C CNN
 F 3 "" H 4750 3550 50  0001 C CNN
 	1    4750 3550
 	0    1    1    0   
@@ -711,4 +694,38 @@ Wire Wire Line
 Wire Wire Line
 	5400 3000 4250 3000
 Connection ~ 4250 3000
+$Sheet
+S 7600 5100 550  200 
+U 565FC611
+F0 "Switch 6" 60
+F1 "switch.sch" 60
+F2 "SW" I L 7600 5200 60 
+$EndSheet
+Wire Wire Line
+	7400 4050 7400 4000
+Wire Wire Line
+	7400 4000 7600 4000
+Wire Wire Line
+	7000 4950 7400 4950
+Wire Wire Line
+	7400 4950 7400 5200
+Wire Wire Line
+	7400 5200 7600 5200
+Wire Notes Line
+	7300 1200 3100 1200
+Wire Notes Line
+	3100 6250 7300 6250
+Wire Notes Line
+	8500 5600 8500 2600
+$Comp
+L GND #PWR?
+U 1 1 5660EAE5
+P 3700 3500
+F 0 "#PWR?" H 3700 3350 50  0001 C CNN
+F 1 "GND" H 3700 3350 50  0000 C CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

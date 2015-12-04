@@ -12,14 +12,15 @@ l.devices = [
     kidraw.Device(slib.vcc('+3.3V')),
     kidraw.Device(slib.vcc('+5V')),
     kidraw.Device(slib.vcc('Line')),
-    kidraw.Device(slib.gnd()),
+    kidraw.Device(slib.gnd('GND')),
+    kidraw.Device(slib.gnd('LGND')),
     kidraw.Device(slib.power_flag()),
     kidraw.Device(slib.resistor(),
-                  [flib.chip(flib.imperial('0805'))]),
+                  [flib.chip(flib.imperial('0603'))]),
     kidraw.Device(slib.capacitor(),
-                  [flib.chip(flib.imperial('0805'))]),
+                  [flib.chip(flib.imperial('0603'))]),
     kidraw.Device(slib.led(),
-                  [flib.chip(flib.imperial('0805'), polarized=True)]),
+                  [flib.chip(flib.imperial('0603'), polarized=True)]),
     kidraw.Device(slib.test_point(), [flib.test_point(1)]),
 ]
 
@@ -71,7 +72,7 @@ with sch.ICBuilder(s, 32, pin_len=300, target_aspect_ratio=3) as ic:
     ic.side(sch.Pin.Right)
     ic.gap(3)
     for pwm, numch, startpin in ((2, 4, 6),
-                                 (3, 1, 12)):
+                                 (3, 2, 12)):
         for i in range(numch):
             ic.pin(startpin+i, name='PWM{0}_{1}'.format(pwm, i+1), type=sch.Pin.Output)
             ic.gap(1)
@@ -163,6 +164,17 @@ s.features = [
     sch.Pin(numbers=[1, 2], pos=(-100, 0), len=50, dir=sch.Pin.Right, type=sch.Pin.Passive),
     sch.Pin(numbers=[3, 4], pos=(100, 0), len=50, dir=sch.Pin.Left, type=sch.Pin.Passive),
     sch.Line(points=[(-50, 0), (50, 50)]),
+]
+l.devices.append(kidraw.Device(s, [f]))
+
+# Fuse
+s = slib.fuse()
+s.features.append(sch.Pin(numbers=3, type=sch.Pin.NotConnected, shape=sch.Pin.Hidden))
+f = fp.Footprint(name='Block', description='5x20mm cartridge fuse holder')
+f.features = [
+    fp.ThroughHolePad(name=1, center=(-7.5, 0), size=(1.8, 1.8), drill_size=1.3),
+    fp.ThroughHolePad(name=2, center=(7.5, 0), size=(1.8, 1.8), drill_size=1.3),
+    fp.ThroughHolePad(name=3, center=(0, 0), size=(2.8, 2.8), drill_size=2.6),
 ]
 l.devices.append(kidraw.Device(s, [f]))
 

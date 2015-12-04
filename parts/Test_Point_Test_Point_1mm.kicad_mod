@@ -4,7 +4,7 @@
 (at 0 0)
 (descr "")
 (fp_text reference "REF"
-  (at 0 -1)
+  (at 0.000 -1.500)
   (layer F.SilkS)
   #hide
   (effects
@@ -15,7 +15,7 @@
   )
 )
 (fp_text value "VAL"
-  (at 0 1)
+  (at 0.000 1.500)
   (layer F.Fab)
   #hide
   (effects
@@ -26,8 +26,8 @@
   )
 )
 (pad 1 connect circle
-  (at 0 0 0)
-  (size 1 1)
+  (at 0.000 0.000 0)
+  (size 1.000 1.000)
   (layers F.Cu F.Mask)
   (solder_mask_margin 0)
   (clearance 0)

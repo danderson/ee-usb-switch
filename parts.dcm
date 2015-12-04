@@ -11,6 +11,9 @@ $ENDCMP
 $CMP GND
 D GND ground rail
 $ENDCMP
+$CMP LGND
+D LGND ground rail
+$ENDCMP
 $CMP PWR_FLAG
 D 
 $ENDCMP
@@ -42,6 +45,9 @@ $CMP USB_Micro
 D USB Micro Connector
 $ENDCMP
 $CMP Switch_SPST
+D 
+$ENDCMP
+$CMP Fuse
 D 
 $ENDCMP
 #End Doc Library
