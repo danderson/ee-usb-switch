@@ -174,7 +174,20 @@ f = fp.Footprint(name='Block', description='5x20mm cartridge fuse holder')
 f.features = [
     fp.ThroughHolePad(name=1, center=(-7.5, 0), size=(1.8, 1.8), drill_size=1.3),
     fp.ThroughHolePad(name=2, center=(7.5, 0), size=(1.8, 1.8), drill_size=1.3),
-    fp.ThroughHolePad(name=3, center=(0, 0), size=(2.8, 2.8), drill_size=2.6),
+    fp.ThroughHolePad(name=3, center=(0, 0), size=(3, 3), drill_size=2.6),
+
+    fp.Line(start=(-11.3, 3.5), end=(11.3, 3.5)),
+    fp.Line(start=(11.3, 3.5), end=(11.3, -3.5)),
+    fp.Line(start=(11.3, -3.5), end=(-11.3, -3.5)),
+    fp.Line(start=(-11.3, -3.5), end=(-11.3, 3.5)),
+
+    fp.Line(start=(-10, 2.5), end=(10, 2.5), layer=fp.Layer.TopAssembly),
+    fp.Line(start=(10, 2.5), end=(10, -2.5), layer=fp.Layer.TopAssembly),
+    fp.Line(start=(10, -2.5), end=(-10, -2.5), layer=fp.Layer.TopAssembly),
+    fp.Line(start=(-10, -2.5), end=(-10, 2.5), layer=fp.Layer.TopAssembly),
+
+    fp.Line(start=(-5, -2.5), end=(-5, 2.5), layer=fp.Layer.TopAssembly),
+    fp.Line(start=(5, -2.5), end=(5, 2.5), layer=fp.Layer.TopAssembly),
 ]
 l.devices.append(kidraw.Device(s, [f]))
 
