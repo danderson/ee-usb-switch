@@ -88,7 +88,7 @@
 (pad shell thru_hole oval
   (at -2.500 -2.700 0)
   (size 1.250 0.950)
-  (drill 0.85)
+  (drill oval 0.850 0.550)
   (layers *.Cu *.Mask F.SilkS)
   (solder_mask_margin 0)
   (clearance 0)
@@ -99,7 +99,7 @@
 (pad shell thru_hole oval
   (at 2.500 -2.700 0)
   (size 1.250 0.950)
-  (drill 0.85)
+  (drill oval 0.850 0.550)
   (layers *.Cu *.Mask F.SilkS)
   (solder_mask_margin 0)
   (clearance 0)
@@ -110,7 +110,7 @@
 (pad shell thru_hole oval
   (at -3.500 0.000 0)
   (size 0.900 1.550)
-  (drill 1.15)
+  (drill oval 0.500 1.150)
   (layers *.Cu *.Mask F.SilkS)
   (solder_mask_margin 0)
   (clearance 0)
@@ -121,7 +121,7 @@
 (pad shell thru_hole oval
   (at 3.500 0.000 0)
   (size 0.900 1.550)
-  (drill 1.15)
+  (drill oval 0.500 1.150)
   (layers *.Cu *.Mask F.SilkS)
   (solder_mask_margin 0)
   (clearance 0)

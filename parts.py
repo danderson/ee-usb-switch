@@ -124,12 +124,12 @@ f.features = [
 
     # Rear strain relief tabs
     # TODO: need support for oval drill holes here.
-    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-2.5, -2.7), size=(1.25, 0.95), drill_size=0.85),
-    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(2.5, -2.7), size=(1.25, 0.95), drill_size=0.85),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-2.5, -2.7), size=(1.25, 0.95), drill_size=(0.85, 0.55)),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(2.5, -2.7), size=(1.25, 0.95), drill_size=(0.85, 0.55)),
 
     # Front strain relief tabs
-    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-3.5, 0), size=(0.9, 1.55), drill_size=1.15),
-    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(3.5, 0), size=(0.9, 1.55), drill_size=1.15),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(-3.5, 0), size=(0.9, 1.55), drill_size=(0.5, 1.15)),
+    fp.ThroughHolePad(name='shell', shape=fp.PadShape.Obround, center=(3.5, 0), size=(0.9, 1.55), drill_size=(0.5, 1.15)),
 
     # Front solder pads (for more mechanical strength)
     fp.SurfaceMountPad(name='shell', center=(-1, 0), size=(1.5, 1.5)),
